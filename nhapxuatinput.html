@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="hai">
+    <input type="text" id="phu">
+    <button onclick="hien()">Nút 2</button>
+    <button onclick="quynh()">Nút 2</button>
+    <h1 id="kq"></h1>
+    <script>
+        function hien() {
+            let hai1 = +document.getElementById("hai").value;
+            let hai2 = +document.getElementById("phu").value;
+            document.getElementById("kq").innerHTML = hai1 + hai2;
+        }
+
+
+        function quynh() {
+            let hai1 = +document.getElementById("hai").value;
+            let hai2 = +document.getElementById("phu").value;
+            document.getElementById("kq").innerHTML = hai1 - hai2;
+        }
+    </script>
+    <!-- Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không
+
+        Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.
+
+        Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0
+
+        Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó -->
+    <!-- làm lại 4 bài bằng cú pháp này -->
+</body>
+
+</html>
