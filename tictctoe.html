@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="i">
+    <input type="text" id="j">
+    <button onclick="tik()">Đánh</button>
+    <div id="table"></div>
+    <br>
+    <script>
+        let arr = [["_", "_", "_"], ["_", "_", "_"], ["_", "_", "_"]];
+        let str = "";
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                str += arr[i][j] + " ";
+            }
+            str += "<br>"
+        }
+        document.getElementById("table").innerHTML = str;
+        function tik() {
+            let i = document.getElementById("i").value;
+            let j = document.getElementById("j").value;
+            arr[i][j] = "x";
+            let str = "";
+            for (let i = 0; i < arr.length; i++) {
+                for (let j = 0; j < arr[i].length; j++) {
+                    str += arr[i][j] + " ";
+                }
+                str += "<br>"
+            }
+            document.getElementById("table").innerHTML = str;
+        }
+    </script>
+</body>
+
+</html>
