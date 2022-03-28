@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function timKiem(so, mang) {
+        let rs;
+        rs = -1;
+        for(let i=0; i< mang.length; i++) {
+            if (so == mang[i]) {
+                rs = i;
+            }
+        }
+        return rs;
+    }
+
+    let arr = [1,2,3,4,5,6,7,8];
+    let kq = timKiem(2, [1,2,3,4,5,6,7,8]);
+    alert(kq);
+    </script>
+</body>
+</html>

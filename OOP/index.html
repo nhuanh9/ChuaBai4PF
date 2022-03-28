@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- đối tượng là người, vật, hiện tượng con người tác động tới bao gồm thuộc tính và hành vi  -->
+    <!-- Lớp là tập hợp các đối tượng có cùng các thuộc tính và hành vi, đối tượng là thể hiện cụ thể của lớp -->
+    <!-- Thuộc tính: đặc điểm của các đối tượng, Hành vi: hành động của đối tượng đó -->
+    <!-- cách tạo lớp -->
+    <!-- cách tạo đối tượng từ lớp -->
+    <!-- cách sử dụng các thuộc tính, hành vi của lớp -->
+
+    <!--Hãy hiển thị danh sách sản phẩm (bằng JS): 
+        1: IP13 : 1300;
+        2: S22Ultra: 1600;
+        3: Xiaomi: 700;
+        4: LG G8: 500;
+        5: IPX: 500;
+     -->
+    <script>
+        class SanPham {
+            ma;
+            ten;
+            gia;
+
+            constructor(m, t, g) {
+                this.ma = m;
+                this.ten = t;
+                this.gia = g;
+            }
+        }
+        let sp1 = new SanPham(1, "IP13", 1300);
+        let sp2 = new SanPham(2, "S22Ultra", 1600);
+        let sp3 = new SanPham(3, "Xiaomi", 700);
+        let sp4 = new SanPham(4, "LG G8", 500);
+        let sp5 = new SanPham(5, "IPX", 500);
+        let arr = [sp1, sp2, sp3, sp4, sp5];
+        for (let i = 0; i < arr.length; i++) {
+            document.write("<h1>" + arr[i].ten + ":" + arr[i].gia + "</h1>")
+        }
+    </script>
+</body>
+
+</html>

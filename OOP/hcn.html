@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="cv" width="600" height="600" style="border: 1px solid;"></canvas>
+    <!-- 
+        Viết lớp HCN:
+        - toạ độ x, y
+        - màu
+        - chiều dài, chiều rộng
+        - phương thức: vẽ hình chữ nhật lên canvas
+        Tạo được 2-3 đối tượng và thử vẽ
+     -->
+    <script>
+        class HCN {
+            x; y; mau; cd; cr;
+            constructor(x, y, z, t, u) {
+                this.x = x;
+                this.y = y;
+                this.mau = z;
+                this.cd = t;
+                this.cr = u;
+            }
+            ve() {
+                let cvas = document.getElementById('cv').getContext('2d');
+                cvas.fillStyle = this.mau;
+                cvas.fillRect(this.x, this.y, this.cd, this.cr);
+            }
+
+            tinhChuVi() {
+                return (this.cd+this.cr)*2; 
+            }
+            tinhDienTich() {
+                return this.cr*this.cr;
+            }
+        }
+
+        let hcn1 = new HCN(10, 10, 'red', 100, 200);
+        let hcn2 = new HCN(90, 100, 'yellow', 100, 200);
+        hcn1.ve();
+        hcn2.ve();
+        alert(hcn1.tinhDienTich());
+    </script>
+</body>
+
+</html>

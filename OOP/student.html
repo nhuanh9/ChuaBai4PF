@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        Xây dựng lớp học sinh có các thuộc tính: tên, tuổi, điểm trung bình.
+        Và có phương thức: hiện tên của học sinh
+     -->
+    <script>
+        class HocSinh {
+            ten;
+            tuoi;
+            dtb;
+            constructor(x, y, z) {
+                this.ten = x;
+                this.tuoi = y;
+                this.dtb = z;
+            }
+            hienThi() {
+                document.write(this.ten+": " + this.dtb+", "+ this.tuoi+"<br>");
+            }
+        }
+
+        let hs1 = new HocSinh('NA', 23, 15);
+        hs1.hienThi()
+        // tạo 1 học sinh có tên là: Pf2201R1, tuổi: 22, dtb: 10; In ra thông tin;
+        let hs2 = new HocSinh('Pf2201R1', 22, 10);
+        hs2.hienThi()
+        let hs3 = new HocSinh('C22', 21, 5);
+        hs3.hienThi()
+        
+    </script>
+</body>
+
+</html>

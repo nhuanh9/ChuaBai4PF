@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Xây dựng hàm giải phương trình bậc nhất, biết tham số là các hệ số nguyên a, b. 
+        // Hàm in ra nghiệm của phương trình theo tham số đã cho.
+        function giaiPTBN(a, b) {
+            let rs = "";
+            if(a==0) {
+                if(b==0) {
+                    rs = "Vô số nghiệm";
+                } else {
+                    rs = "Vô nghiệm"
+                }
+            } else {
+                rs = -b/a;
+            }
+            alert(rs)
+        }
+        // let kq = giaiPTBN(3,5);
+        giaiPTBN(5,3);
+        // alert(kq);
+    </script>
+</body>
+</html>

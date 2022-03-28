@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demNguyenAm(chuoi) {
+            let rs = 0;
+            let nguyenAm = ['u', 'e', 'o', 'a', 'i'];
+            for(let i=0; i<chuoi.length; i++) {
+                if(nguyenAm.indexOf(chuoi[i]) != -1) {
+                    rs = rs +1;
+                }
+            }
+
+            if(rs == 0) {
+                return false;
+            } else {
+                return rs;
+            }
+        }
+
+        alert(demNguyenAm('nhuanh'));
+    </script>
+</body>
+</html>
